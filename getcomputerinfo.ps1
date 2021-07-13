@@ -34,7 +34,7 @@ try {
     $size_Left = [Math]::Round($size.freespace /1gb)
 
     if ($size_Left -lt ($total_Size / 10)) {
-        Show-Notification -ToastTitle "Diskutrymme" -ToastText "You only have a small amount of diskspace left ($size_Left GB) available on your C: Drive. Your PC might not function correctly until some diskspace is freed"
+        Show-Notification -ToastTitle "Disk Space" -ToastText "You only have a small amount of diskspace left ($size_Left GB) available on your C: Drive. Your PC might not function correctly until some diskspace is freed"
     }
    
 }
